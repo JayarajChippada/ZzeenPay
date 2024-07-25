@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zzeenpay/constants/global_variables.dart';
-import 'package:zzeenpay/features/auth/screens/auth_screen.dart';
+import 'package:zzeenpay/features/auth/screens/login_screen.dart';
 import 'package:zzeenpay/features/splash/widgets/button.dart';
 import 'package:zzeenpay/features/splash/widgets/content.dart';
 import 'package:zzeenpay/features/splash/widgets/dots.dart';
@@ -90,7 +90,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   text: 'Skip',
                   onTap: () {
                     Navigator.pushReplacementNamed(
-                        context, SignUpScreen.routeName);
+                        context, LoginScreen.routeName);
                   },
                 ),
                 MyButton(
@@ -103,7 +103,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     } else {
                       Navigator.pushReplacementNamed(
                         context,
-                        SignUpScreen.routeName
+                        LoginScreen.routeName
                       );
                     }
                   },

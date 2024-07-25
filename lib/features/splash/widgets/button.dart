@@ -12,8 +12,7 @@ class MyButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-        minimumSize: Size(icon == null ? 85 : 140, 56),
-        primary: icon == null ? GlobalVariables.greyBackgroundColor :GlobalVariables.secondaryColor,
+        minimumSize: Size(icon == null ? 85 : 140, 56), backgroundColor: icon == null ? GlobalVariables.greyBackgroundColor :GlobalVariables.secondaryColor,
         shape: RoundedRectangleBorder(
           borderRadius:
               BorderRadius.circular(15), // Adjust the radius as needed

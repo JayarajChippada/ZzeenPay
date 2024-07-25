@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zzeenpay/common/bottom_bar.dart';
 import 'package:zzeenpay/features/auth/screens/auth_screen.dart';
 import 'package:zzeenpay/features/auth/screens/forget_password_screen.dart';
+import 'package:zzeenpay/features/auth/screens/login_screen.dart';
 import 'package:zzeenpay/features/auth/screens/otp_screen.dart';
 import 'package:zzeenpay/features/auth/screens/reset_password_screen.dart';
 import 'package:zzeenpay/features/home/screens/expenses_screen.dart';
@@ -19,6 +20,11 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case SignUpScreen.routeName:
       return MaterialPageRoute(
         builder: (_) => const SignUpScreen(),
+      );
+
+    case LoginScreen.routeName:
+      return MaterialPageRoute(
+        builder: (_) => const LoginScreen(),
       );
 
     case ForgetPasswordScreen.routeName:

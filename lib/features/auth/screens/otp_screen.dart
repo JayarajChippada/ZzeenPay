@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:zzeenpay/common/bottom_bar.dart';
 import 'package:zzeenpay/common/custom_button.dart';
 import 'package:zzeenpay/constants/global_variables.dart';
-import 'package:zzeenpay/features/auth/screens/reset_password_screen.dart';
-
 class OtpScreen extends StatefulWidget {
   static const String routeName = '/otp-screen';
   const OtpScreen({super.key});
@@ -48,14 +47,14 @@ class _OtpScreenState extends State<OtpScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "Verify Email",
+                "Verify Phone Number",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36),
               ),
               const SizedBox(
                 height: 5,
               ),
               const Text(
-                "Code Send To Your Email",
+                "Code Send To Your Phone Number",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 28,
@@ -114,7 +113,7 @@ class _OtpScreenState extends State<OtpScreen> {
               CustomButton(
                   text: 'VERIFY',
                   onTap: () {
-                    Navigator.pushNamed(context, ResetPasswordScreen.routeName);
+                    Navigator.pushReplacementNamed(context, MyBottomBar.routeName);
                   }),
             ],
           ),
